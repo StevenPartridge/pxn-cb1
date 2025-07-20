@@ -1,0 +1,1913 @@
+{
+  "packet_773_1752987984833": {
+    "description": "ABS knob up",
+    "changes": [
+      "Byte 3: 0 (00000000) → 32 (00100000)"
+    ],
+    "state": {
+      "packetNum": 275,
+      "hex": "014000200000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 32,
+        "binary": "00100000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "UP",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:06:24.833Z"
+  },
+  "packet_1131_1752987990733": {
+    "description": "ABS knob down",
+    "changes": [
+      "Byte 3: 0 (00000000) → 16 (00010000)"
+    ],
+    "state": {
+      "packetNum": 891,
+      "hex": "014000100000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 16,
+        "binary": "00010000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "MIDDLE",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:06:30.733Z"
+  },
+  "packet_1500_1752987996836": {
+    "description": "ABS knob click",
+    "changes": [
+      "Byte 4: 0 (00000000) → 1 (00000001)"
+    ],
+    "state": {
+      "packetNum": 1210,
+      "hex": "014000000100",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 1,
+        "binary": "00000001",
+        "knob1Click": "ON",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:06:36.836Z"
+  },
+  "packet_1881_1752988003120": {
+    "description": "TC knob up",
+    "changes": [
+      "Byte 3: 0 (00000000) → 128 (10000000)"
+    ],
+    "state": {
+      "packetNum": 1650,
+      "hex": "014000800000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 128,
+        "binary": "10000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "UP"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:06:43.120Z"
+  },
+  "packet_2206_1752988008506": {
+    "description": "TC knob down",
+    "changes": [
+      "Byte 3: 0 (00000000) → 64 (01000000)"
+    ],
+    "state": {
+      "packetNum": 1984,
+      "hex": "014000400000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 64,
+        "binary": "01000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "MIDDLE"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:06:48.506Z"
+  },
+  "packet_3354_1752988027469": {
+    "description": "Red kill switch on",
+    "changes": [
+      "Byte 2: 0 (00000000) → 8 (00001000)"
+    ],
+    "state": {
+      "packetNum": 2387,
+      "hex": "014008000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:07:07.469Z"
+  },
+  "packet_3732_1752988033708": {
+    "description": "Red kill switch off",
+    "changes": [
+      "Byte 2: 0 (00000000) → 8 (00001000)"
+    ],
+    "state": {
+      "packetNum": 3457,
+      "hex": "014008000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:07:13.708Z"
+  },
+  "packet_4808_1752988051470": {
+    "description": "Engine Start pressed (auto springs back up)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 4 (00000100)"
+    ],
+    "state": {
+      "packetNum": 3859,
+      "hex": "014004000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:07:31.470Z"
+  },
+  "packet_5885_1752988069259": {
+    "description": "handle button (springs back up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 65 (01000001)"
+    ],
+    "state": {
+      "packetNum": 4972,
+      "hex": "014100000000",
+      "buttons1": [
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:07:49.259Z"
+  },
+  "packet_6340_1752988076785": {
+    "description": "cruise button (springs up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 66 (01000010)"
+    ],
+    "state": {
+      "packetNum": 6000,
+      "hex": "014200000000",
+      "buttons1": [
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:07:56.785Z"
+  },
+  "packet_6738_1752988083348": {
+    "description": "flash button (springs up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 68 (01000100)"
+    ],
+    "state": {
+      "packetNum": 6412,
+      "hex": "014400000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:03.348Z"
+  },
+  "packet_7064_1752988088731": {
+    "description": "audio (springs up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 72 (01001000)"
+    ],
+    "state": {
+      "packetNum": 6801,
+      "hex": "014800000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:08.731Z"
+  },
+  "packet_7437_1752988094899": {
+    "description": "wipers (springs up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 80 (01010000)"
+    ],
+    "state": {
+      "packetNum": 7136,
+      "hex": "015000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:14.899Z"
+  },
+  "packet_7850_1752988101708": {
+    "description": "map (springs up)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 96 (01100000)"
+    ],
+    "state": {
+      "packetNum": 7497,
+      "hex": "016000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:21.708Z"
+  },
+  "packet_9066_1752988121808": {
+    "description": "light (locks, going from on to off)",
+    "changes": [
+      "Byte 1: 64 (01000000) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 7991,
+      "hex": "010000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:41.808Z"
+  },
+  "packet_9894_1752988135471": {
+    "description": "talk (locks, going from off to on)",
+    "changes": [
+      "Byte 1: 0 (00000000) → 128 (10000000)"
+    ],
+    "state": {
+      "packetNum": 9168,
+      "hex": "018000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:08:55.471Z"
+  },
+  "packet_10425_1752988144251": {
+    "description": "talk (locks, going from on to off)",
+    "changes": [
+      "Byte 1: 128 (10000000) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 9972,
+      "hex": "010000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:09:04.251Z"
+  },
+  "packet_11919_1752988168917": {
+    "description": "light (locks, going from off to on)",
+    "changes": [
+      "Byte 1: 0 (00000000) → 64 (01000000)"
+    ],
+    "state": {
+      "packetNum": 10502,
+      "hex": "014000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:09:28.917Z"
+  },
+  "packet_12496_1752988178454": {
+    "description": "esc (button springs up)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 1 (00000001)"
+    ],
+    "state": {
+      "packetNum": 12089,
+      "hex": "014001000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:09:38.454Z"
+  },
+  "packet_12539_1752988179163": {
+    "description": "",
+    "changes": [
+      "Byte 2: 0 (00000000) → 2 (00000010)"
+    ],
+    "state": {
+      "packetNum": 12539,
+      "hex": "014002000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:09:39.163Z"
+  },
+  "packet_12815_1752988183722": {
+    "description": "enter (button springs up)",
+    "changes": [
+      "Byte 2: 2 (00000010) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 12550,
+      "hex": "014000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:09:43.722Z"
+  },
+  "packet_14385_1752988209655": {
+    "description": "three state switch (homes back to center - going from home to up)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 16 (00010000)"
+    ],
+    "state": {
+      "packetNum": 12984,
+      "hex": "014010000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:10:09.655Z"
+  },
+  "packet_15383_1752988226131": {
+    "description": "first three toggle switch (homes, going from home to down)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 32 (00100000)"
+    ],
+    "state": {
+      "packetNum": 14504,
+      "hex": "014020000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:10:26.131Z"
+  },
+  "packet_17481_1752988260784": {
+    "description": "first three toggle switch (from down to home)",
+    "changes": [
+      "Byte 2: 32 (00100000) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 15956,
+      "hex": "014000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:11:00.784Z"
+  },
+  "packet_19125_1752988287937": {
+    "description": "second three toggle switch (stays in place, from home to down)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 128 (10000000)"
+    ],
+    "state": {
+      "packetNum": 17666,
+      "hex": "014080000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:11:27.937Z"
+  },
+  "packet_19885_1752988300481": {
+    "description": "second three toggle switch (stays in place, from down to home)",
+    "changes": [
+      "Byte 2: 128 (10000000) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 19377,
+      "hex": "014000000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:11:40.481Z"
+  },
+  "packet_20246_1752988306456": {
+    "description": "second three toggle switch (stays in place, from home to up)",
+    "changes": [
+      "Byte 2: 0 (00000000) → 64 (01000000)"
+    ],
+    "state": {
+      "packetNum": 19968,
+      "hex": "014040000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:11:46.456Z"
+  },
+  "packet_21890_1752988333607": {
+    "description": "third three toggle switch (stays in place, from home to down)",
+    "changes": [
+      "Byte 3: 0 (00000000) → 2 (00000010)"
+    ],
+    "state": {
+      "packetNum": 20701,
+      "hex": "014040020000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 2,
+        "binary": "00000010",
+        "onOffSwitch": "OFF",
+        "engineStart": "ON",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:12:13.607Z"
+  },
+  "packet_22823_1752988349022": {
+    "description": "third three toggle switch (stays in place, from down to home)",
+    "changes": [
+      "Byte 3: 2 (00000010) → 0 (00000000)"
+    ],
+    "state": {
+      "packetNum": 22389,
+      "hex": "014040000000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 0,
+        "binary": "00000000",
+        "onOffSwitch": "OFF",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:12:29.022Z"
+  },
+  "packet_23192_1752988355101": {
+    "description": "third three toggle switch (stays in place, from home to up)",
+    "changes": [
+      "Byte 3: 0 (00000000) → 1 (00000001)"
+    ],
+    "state": {
+      "packetNum": 22868,
+      "hex": "014040010000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 1,
+        "binary": "00000001",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:12:35.101Z"
+  },
+  "packet_25041_1752988385645": {
+    "description": "fourth three toggle switch (stays in place, from home to down)",
+    "changes": [
+      "Byte 3: 1 (00000001) → 9 (00001001)"
+    ],
+    "state": {
+      "packetNum": 23266,
+      "hex": "014040090000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 9,
+        "binary": "00001001",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "ON",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:05.645Z"
+  },
+  "packet_25690_1752988396363": {
+    "description": "fourth three toggle switch (stays in place, from down to home)",
+    "changes": [
+      "Byte 3: 9 (00001001) → 1 (00000001)"
+    ],
+    "state": {
+      "packetNum": 25163,
+      "hex": "014040010000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 1,
+        "binary": "00000001",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "OFF",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:16.363Z"
+  },
+  "packet_26046_1752988402246": {
+    "description": "fourth three toggle switch (stays in place, from home to up)",
+    "changes": [
+      "Byte 3: 1 (00000001) → 5 (00000101)"
+    ],
+    "state": {
+      "packetNum": 25795,
+      "hex": "014040050000",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:22.246Z"
+  },
+  "packet_26488_1752988409540": {
+    "description": "joystick right",
+    "changes": [
+      "Byte 5: 0 (00000000) → 3 (00000011)"
+    ],
+    "state": {
+      "packetNum": 26281,
+      "hex": "014040050003",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:29.540Z"
+  },
+  "packet_26819_1752988415021": {
+    "description": "joystick left",
+    "changes": [
+      "Byte 5: 0 (00000000) → 7 (00000111)"
+    ],
+    "state": {
+      "packetNum": 26626,
+      "hex": "014040050007",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:35.021Z"
+  },
+  "packet_27164_1752988420704": {
+    "description": "joystick down",
+    "changes": [
+      "Byte 5: 0 (00000000) → 5 (00000101)"
+    ],
+    "state": {
+      "packetNum": 26969,
+      "hex": "014040050005",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:40.704Z"
+  },
+  "packet_27522_1752988426634": {
+    "description": "joystick up",
+    "changes": [
+      "Byte 5: 0 (00000000) → 1 (00000001)"
+    ],
+    "state": {
+      "packetNum": 27345,
+      "hex": "014040050001",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:46.634Z"
+  },
+  "packet_27907_1752988432986": {
+    "description": "joystick up-left",
+    "changes": [
+      "Byte 5: 0 (00000000) → 7 (00000111)"
+    ],
+    "state": {
+      "packetNum": 27689,
+      "hex": "014040050007",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:13:52.986Z"
+  },
+  "packet_28468_1752988442245": {
+    "description": "joystick down left",
+    "changes": [
+      "Byte 5: 0 (00000000) → 5 (00000101)"
+    ],
+    "state": {
+      "packetNum": 28030,
+      "hex": "014040050005",
+      "buttons1": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "buttons2": [
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "OFF",
+        "ON",
+        "OFF"
+      ],
+      "byte3": {
+        "value": 5,
+        "binary": "00000101",
+        "onOffSwitch": "ON",
+        "engineStart": "OFF",
+        "escButton": "ON",
+        "enterButton": "OFF",
+        "toggle1": "DOWN",
+        "toggle2": "DOWN"
+      },
+      "byte4": {
+        "value": 0,
+        "binary": "00000000",
+        "knob1Click": "OFF",
+        "knob2Click": "OFF",
+        "toggle3": "DOWN",
+        "toggle4": "DOWN"
+      }
+    },
+    "timestamp": "2025-07-20T05:14:02.245Z"
+  }
+}

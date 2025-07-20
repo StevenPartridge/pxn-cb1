@@ -1,4 +1,6 @@
 import type { HIDDevice, ParsedEvent } from '../types/index.js';
+import { PXNCB1DetailedParser } from './pxn-cb1-parser.js';
+import { PXNCB1AccurateParser } from './pxn-cb1-accurate-parser.js';
 
 export interface EventParser {
   name: string;
@@ -97,7 +99,8 @@ export class ParserRegistry {
   constructor() {
     // Register default parsers
     this.register(new ButtonParser());
-    this.register(new PXNCB1Parser());
+    this.register(new PXNCB1AccurateParser()); // Use the accurate parser
+    this.register(new PXNCB1DetailedParser()); // Keep as fallback
   }
 
   register(parser: EventParser): void {

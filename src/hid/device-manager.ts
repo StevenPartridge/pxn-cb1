@@ -58,14 +58,23 @@ export class HIDDeviceManager {
         });
       });
 
-      // Find target device
-      const targetDevice = devices.find(
+      // Find all matching devices
+      let targetDevices = devices.filter(
         device =>
           device.vendorId === this.config.device.vendorId &&
           device.productId === this.config.device.productId
       );
 
-      if (!targetDevice) {
+      // Prefer devices with valid interfaces (not N/A)
+      targetDevices.sort((a, b) => {
+        const aHasInterface = a.interface !== undefined && a.interface !== -1;
+        const bHasInterface = b.interface !== undefined && b.interface !== -1;
+        if (aHasInterface && !bHasInterface) return -1;
+        if (!aHasInterface && bHasInterface) return 1;
+        return 0;
+      });
+
+      if (targetDevices.length === 0) {
         this.logger.error(
           `Target device not found. Looking for vendorId: 0x${this.config.device.vendorId.toString(16).toUpperCase()}, productId: 0x${this.config.device.productId.toString(16).toUpperCase()}`
         );
@@ -78,11 +87,29 @@ export class HIDDeviceManager {
         return false;
       }
 
-      this.logger.info(`Connecting to device: ${targetDevice.product || 'Unknown'}`);
-      
-      // Connect to the device
-      this.device = new HID.HID(targetDevice.path!);
-      this.isConnected = true;
+      this.logger.info(`Found ${targetDevices.length} matching device(s)`);
+
+      // Try to connect to each device until one works
+      for (const targetDevice of targetDevices) {
+        try {
+          this.logger.info(`Attempting to connect to device: ${targetDevice.product || 'Unknown'} at path: ${targetDevice.path}`);
+          
+          // Connect to the device
+          this.device = new HID.HID(targetDevice.path!);
+          this.isConnected = true;
+          
+          this.logger.info(`Successfully connected to device at path: ${targetDevice.path}`);
+          break;
+        } catch (error) {
+          this.logger.warn(`Failed to connect to device at path: ${targetDevice.path}`, error);
+          // Continue to next device
+        }
+      }
+
+      if (!this.isConnected) {
+        this.logger.error('Failed to connect to any matching device');
+        return false;
+      }
 
       // Set up event handlers
       this.setupEventHandlers();
@@ -145,10 +172,8 @@ export class HIDDeviceManager {
    */
   private handleDeviceData(data: Buffer): void {
     try {
-      // Log raw data if enabled
-      if (this.config.logging.enableRawData) {
-        this.logger.debug('Raw HID data:', data.toString('hex'));
-      }
+      // Always log raw data for debugging PXN CB1
+      this.logger.debug('Raw HID data:', data.toString('hex'));
 
       // Parse the data
       const parsedEvent = this.parser.parse(data);

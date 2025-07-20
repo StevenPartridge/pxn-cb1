@@ -1,0 +1,147 @@
+{
+  "device": {
+    "vendorId": 14054,
+    "productId": 32769,
+    "name": "PXN CB1 Button Box"
+  },
+  "polling": {
+    "frequency": 10,
+    "debounce": 50
+  },
+  "actions": {
+    "button_1": {
+      "name": "Button 1",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_2": {
+      "name": "Button 2", 
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_3": {
+      "name": "Button 3",
+      "action": "log", 
+      "description": "Log button press"
+    },
+    "button_4": {
+      "name": "Button 4",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_5": {
+      "name": "Button 5",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_6": {
+      "name": "Button 6",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_7": {
+      "name": "Button 7",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_8": {
+      "name": "Button 8",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_9": {
+      "name": "Button 9",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_10": {
+      "name": "Button 10",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_11": {
+      "name": "Button 11",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_12": {
+      "name": "Button 12",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_13": {
+      "name": "Button 13",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_14": {
+      "name": "Button 14",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_15": {
+      "name": "Button 15",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "button_16": {
+      "name": "Button 16",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "engine_start": {
+      "name": "Engine Start",
+      "action": "log",
+      "description": "Engine start button"
+    },
+    "esc": {
+      "name": "ESC",
+      "action": "log",
+      "description": "ESC button"
+    },
+    "enter": {
+      "name": "Enter",
+      "action": "log",
+      "description": "Enter button"
+    },
+    "on_off_switch": {
+      "name": "On/Off Switch",
+      "action": "log",
+      "description": "On/Off toggle switch"
+    },
+    "toggle_switch_1": {
+      "name": "Toggle Switch 1",
+      "action": "log",
+      "description": "3-state toggle switch (spring return)"
+    },
+    "toggle_switch_2": {
+      "name": "Toggle Switch 2", 
+      "action": "log",
+      "description": "3-state toggle switch (stays in position)"
+    },
+    "toggle_switch_3": {
+      "name": "Toggle Switch 3",
+      "action": "log", 
+      "description": "3-state toggle switch (stays in position)"
+    },
+    "toggle_switch_4": {
+      "name": "Toggle Switch 4",
+      "action": "log",
+      "description": "3-state toggle switch (stays in position)"
+    },
+    "knob_1": {
+      "name": "Knob 1",
+      "action": "log",
+      "description": "Rotary knob with click"
+    },
+    "knob_2": {
+      "name": "Knob 2", 
+      "action": "log",
+      "description": "Rotary knob with click"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "enableRawData": false
+  }
+} 

@@ -1,0 +1,227 @@
+{
+  "controls": {
+    "buttons": {
+      "handle": {
+        "changes": ["byte1:64->65"],
+        "default_name": "Handle Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "cruise": {
+        "changes": ["byte1:64->66"],
+        "default_name": "Cruise Button", 
+        "user_name": null,
+        "type": "momentary"
+      },
+      "flash": {
+        "changes": ["byte1:64->68"],
+        "default_name": "Flash Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "audio": {
+        "changes": ["byte1:64->72"],
+        "default_name": "Audio Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "wipers": {
+        "changes": ["byte1:64->80"],
+        "default_name": "Wipers Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "map": {
+        "changes": ["byte1:64->96"],
+        "default_name": "Map Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "esc": {
+        "changes": ["byte2:0->1"],
+        "default_name": "ESC Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "enter": {
+        "changes": ["byte2:0->2"],
+        "default_name": "Enter Button",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "engine_start": {
+        "changes": ["byte2:0->4"],
+        "default_name": "Engine Start",
+        "user_name": null,
+        "type": "momentary"
+      },
+      "kill_switch": {
+        "changes": ["byte2:0->8"],
+        "default_name": "Kill Switch",
+        "user_name": "Red Kill Switch",
+        "type": "toggle"
+      },
+      "talk": {
+        "changes": ["byte1:0->128", "byte1:128->0"],
+        "default_name": "Talk Button",
+        "user_name": null,
+        "type": "toggle"
+      },
+      "light": {
+        "changes": ["byte1:64->0", "byte1:0->64"],
+        "default_name": "Light Button",
+        "user_name": null,
+        "type": "toggle"
+      }
+    },
+    "knobs": {
+      "abs": {
+        "up": {
+          "changes": ["byte3:0->32"],
+          "default_name": "ABS Knob Up",
+          "user_name": null
+        },
+        "down": {
+          "changes": ["byte3:0->16"],
+          "default_name": "ABS Knob Down", 
+          "user_name": null
+        },
+        "click": {
+          "changes": ["byte4:0->1"],
+          "default_name": "ABS Knob Click",
+          "user_name": null
+        }
+      },
+      "tc": {
+        "up": {
+          "changes": ["byte3:0->128"],
+          "default_name": "TC Knob Up",
+          "user_name": null
+        },
+        "down": {
+          "changes": ["byte3:0->64"],
+          "default_name": "TC Knob Down",
+          "user_name": null
+        }
+      }
+    },
+    "toggles": {
+      "three_way_1": {
+        "up": {
+          "changes": ["byte2:0->16"],
+          "default_name": "Three-Way Switch 1 Up",
+          "user_name": "Three State Switch Up"
+        },
+        "down": {
+          "changes": ["byte2:0->32"],
+          "default_name": "Three-Way Switch 1 Down",
+          "user_name": "First Three Toggle Switch Down"
+        },
+        "home": {
+          "changes": ["byte2:16->0", "byte2:32->0"],
+          "default_name": "Three-Way Switch 1 Home",
+          "user_name": "Three State Switch Home"
+        },
+        "type": "spring_return"
+      },
+      "three_way_2": {
+        "up": {
+          "changes": ["byte2:0->64"],
+          "default_name": "Three-Way Switch 2 Up",
+          "user_name": "Second Three Toggle Switch Up"
+        },
+        "down": {
+          "changes": ["byte2:0->128"],
+          "default_name": "Three-Way Switch 2 Down",
+          "user_name": "Second Three Toggle Switch Down"
+        },
+        "home": {
+          "changes": ["byte2:64->0", "byte2:128->0"],
+          "default_name": "Three-Way Switch 2 Home",
+          "user_name": "Second Three Toggle Switch Home"
+        },
+        "type": "spring_return"
+      },
+      "three_way_3": {
+        "up": {
+          "changes": ["byte3:0->1"],
+          "default_name": "Three-Way Switch 3 Up",
+          "user_name": "Third Three Toggle Switch Up"
+        },
+        "down": {
+          "changes": ["byte3:0->2"],
+          "default_name": "Three-Way Switch 3 Down",
+          "user_name": "Third Three Toggle Switch Down"
+        },
+        "home": {
+          "changes": ["byte3:1->0", "byte3:2->0"],
+          "default_name": "Three-Way Switch 3 Home",
+          "user_name": "Third Three Toggle Switch Home"
+        },
+        "type": "latching"
+      },
+      "three_way_4": {
+        "up": {
+          "changes": ["byte3:1->5"],
+          "default_name": "Three-Way Switch 4 Up",
+          "user_name": "Fourth Three Toggle Switch Up"
+        },
+        "down": {
+          "changes": ["byte3:1->9"],
+          "default_name": "Three-Way Switch 4 Down",
+          "user_name": "Fourth Three Toggle Switch Down"
+        },
+        "home": {
+          "changes": ["byte3:5->1", "byte3:9->1"],
+          "default_name": "Three-Way Switch 4 Home",
+          "user_name": "Fourth Three Toggle Switch Home"
+        },
+        "type": "latching"
+      }
+    },
+    "joystick": {
+      "up": {
+        "changes": ["byte5:0->1"],
+        "default_name": "Joystick Up",
+        "user_name": null
+      },
+      "down": {
+        "changes": ["byte5:0->5"],
+        "default_name": "Joystick Down",
+        "user_name": null
+      },
+      "left": {
+        "changes": ["byte5:0->7"],
+        "default_name": "Joystick Left",
+        "user_name": null
+      },
+      "right": {
+        "changes": ["byte5:0->3"],
+        "default_name": "Joystick Right",
+        "user_name": null
+      },
+      "up_left": {
+        "changes": ["byte5:0->7"],
+        "default_name": "Joystick Up-Left",
+        "user_name": null
+      },
+      "down_left": {
+        "changes": ["byte5:0->5"],
+        "default_name": "Joystick Down-Left",
+        "user_name": null
+      }
+    }
+  },
+  "metadata": {
+    "device": "PXN CB1",
+    "version": "1.0",
+    "description": "Control mappings for PXN CB1 button box",
+    "change_format": "byte{number}:{old_value}->{new_value}",
+    "types": {
+      "momentary": "Button that springs back up when released",
+      "toggle": "Button that stays in position",
+      "spring_return": "Toggle that returns to center when released",
+      "latching": "Toggle that stays in position until manually changed"
+    }
+  }
+} 
