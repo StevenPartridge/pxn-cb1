@@ -28,12 +28,24 @@ class HIDMonitor {
     this.actionRegistry = new ActionRegistry(this.logger);
     
     // Initialize device manager
-    const parser = this.parserRegistry.getParserForDevice({
+    const deviceInfo = {
       vendorId: config.device.vendorId,
       productId: config.device.productId,
       release: 0,
       interface: 0,
-    }) || this.parserRegistry.getAllParsers()[0];
+    };
+    
+    // Force use of the config-based parser for PXN CB1
+    let parser = this.parserRegistry.getParserForDevice(deviceInfo);
+    
+    // If no specific parser found, look for ControlConfigParser
+    if (!parser) {
+      const allParsers = this.parserRegistry.getAllParsers();
+      parser = allParsers.find(p => p.name === 'ControlConfigParser') || allParsers[0];
+    }
+    
+    this.logger.info(`Selected parser: ${parser.name}`);
+    this.logger.info(`Looking for device: vendorId=0x${deviceInfo.vendorId.toString(16)}, productId=0x${deviceInfo.productId.toString(16)}`);
     
     this.deviceManager = new HIDDeviceManager(
       config,

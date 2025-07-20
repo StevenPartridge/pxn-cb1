@@ -1,5 +1,7 @@
 import { ParsedEvent } from '../types/index.js';
 import { readFileSync } from 'fs';
+import type { EventParser } from './index.js';
+import type { HIDDevice } from '../types/index.js';
 
 interface ControlChange {
   changes: string[];
@@ -24,7 +26,8 @@ interface ControlConfig {
   };
 }
 
-export class ControlConfigParser {
+export class ControlConfigParser implements EventParser {
+  name = 'ControlConfigParser';
   private config: ControlConfig;
   private previousState: number[] = [0, 0, 0, 0, 0, 0];
 
@@ -37,35 +40,66 @@ export class ControlConfigParser {
     }
   }
 
-  parse(data: Buffer): ParsedEvent | null {
+  parse(data: Buffer): ParsedEvent {
     const currentState = Array.from(data);
+    
+    // Only process 6-byte packets (PXN CB1 control data)
+    // Ignore the 64-byte packets which seem to be status/configuration data
+    if (currentState.length !== 6) {
+      return {
+        timestamp: Date.now(),
+        buttonStates: new Array(8).fill(false),
+        rawData: data,
+        deviceId: 'pxn-cb1'
+      };
+    }
     
     // Find what changed
     const changes = this.detectChanges(this.previousState, currentState);
     
-    if (changes.length === 0) {
-      this.previousState = currentState;
-      return null;
-    }
-
     // Match changes against our config
     const matchedControl = this.matchChanges(changes);
     
     this.previousState = currentState;
     
+    // Create button states array - set the matched control's button index to true
+    const buttonStates = new Array(8).fill(false);
+    
     if (matchedControl) {
-      // Convert button states to boolean array (simplified for now)
-      const buttonStates = new Array(8).fill(false);
+      // Find which button this control corresponds to by searching through the config
+      const buttonIndex = this.findButtonIndexForControl(matchedControl);
+      if (buttonIndex >= 0 && buttonIndex < 8) {
+        buttonStates[buttonIndex] = true;
+      }
       
-      return {
-        timestamp: Date.now(),
-        buttonStates: buttonStates,
-        rawData: data,
-        deviceId: 'pxn-cb1'
-      };
+      console.log(`🎮 Control detected: ${matchedControl.default_name} (${matchedControl.type || 'unknown'})`);
+    } else if (changes.length > 0) {
+      console.log(`🔍 Changes detected but no control matched: ${changes.join(', ')}`);
     }
 
-    return null;
+    return {
+      timestamp: Date.now(),
+      buttonStates: buttonStates,
+      rawData: data,
+      deviceId: 'pxn-cb1'
+    };
+  }
+
+  private findButtonIndexForControl(control: ControlChange): number {
+    // Search through buttons to find the matching control
+    for (const [buttonId, button] of Object.entries(this.config.controls.buttons)) {
+      if (this.changesMatch(button.changes, control.changes)) {
+        return parseInt(buttonId);
+      }
+    }
+    
+    // If not found in buttons, return -1 (no button mapping)
+    return -1;
+  }
+
+  supportsDevice(device: HIDDevice): boolean {
+    // Support PXN CB1 devices
+    return device.vendorId === 0x36E6 && device.productId === 0x8001;
   }
 
   private detectChanges(previous: number[], current: number[]): string[] {

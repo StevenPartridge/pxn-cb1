@@ -178,6 +178,13 @@ export class HIDDeviceManager {
       // Parse the data
       const parsedEvent = this.parser.parse(data);
       
+      // Log parsed event for debugging
+      this.logger.debug('Parsed event:', {
+        timestamp: parsedEvent.timestamp,
+        buttonStates: parsedEvent.buttonStates,
+        deviceId: parsedEvent.deviceId
+      });
+      
       // Apply debouncing
       if (this.debounceTimer) {
         clearTimeout(this.debounceTimer);
@@ -199,6 +206,11 @@ export class HIDDeviceManager {
     const currentStates = event.buttonStates;
     const previousStates = this.lastButtonStates;
 
+    this.logger.debug('Processing button states:', {
+      current: currentStates,
+      previous: previousStates
+    });
+
     // Find buttons that were just pressed (transition from false to true)
     for (let i = 0; i < Math.max(currentStates.length, previousStates.length); i++) {
       const currentState = currentStates[i] || false;
@@ -206,6 +218,7 @@ export class HIDDeviceManager {
 
       if (currentState && !previousState) {
         // Button was just pressed
+        this.logger.debug(`Button ${i} state changed: false -> true`);
         await this.triggerButtonAction(i, event);
       }
     }

@@ -1,6 +1,7 @@
 import type { HIDDevice, ParsedEvent } from '../types/index.js';
 import { PXNCB1DetailedParser } from './pxn-cb1-parser.js';
 import { PXNCB1AccurateParser } from './pxn-cb1-accurate-parser.js';
+import { ControlConfigParser } from './control-config-parser.js';
 
 export interface EventParser {
   name: string;
@@ -15,10 +16,10 @@ export interface EventParser {
 export class ButtonParser implements EventParser {
   name = 'ButtonParser';
 
-  supportsDevice(_device: HIDDevice): boolean {
-    // This parser works with most button boxes
-    // You can add specific vendor/product ID checks here
-    return true;
+  supportsDevice(device: HIDDevice): boolean {
+    // This parser works with most button boxes, but not PXN CB1
+    // PXN CB1 should use the ControlConfigParser
+    return !(device.vendorId === 0x36E6 && device.productId === 0x8001);
   }
 
   parse(data: Buffer): ParsedEvent {
@@ -97,10 +98,12 @@ export class ParserRegistry {
   private parsers: EventParser[] = [];
 
   constructor() {
-    // Register default parsers
-    this.register(new ButtonParser());
+    // Register parsers in order of specificity
+    // ControlConfigParser should be first for PXN CB1 devices
+    this.register(new ControlConfigParser()); // Use the new config-based parser
     this.register(new PXNCB1AccurateParser()); // Use the accurate parser
     this.register(new PXNCB1DetailedParser()); // Keep as fallback
+    this.register(new ButtonParser()); // Generic fallback for other devices
   }
 
   register(parser: EventParser): void {
