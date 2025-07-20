@@ -46,10 +46,6 @@ try {
       console.log(`  🔍 Expected changes: ${testCase.expected}`);
       console.log(`  📊 Raw data: ${testCase.data.toString('hex')}`);
       
-      // Debug: show baseline and current data
-      console.log(`  🔍 Baseline: ${testCase.baseline.toString('hex')}`);
-      console.log(`  🔍 Current: ${testCase.data.toString('hex')}`);
-      
       // Debug: show what changes should be detected
       const baselineState = Array.from(testCase.baseline);
       const currentState = Array.from(testCase.data);

@@ -2,7 +2,7 @@
   "controls": {
     "buttons": {
       "handle": {
-        "changes": ["byte1:64->65"],
+        "changes": ["byte2:64->65"],
         "default_name": "Handle Button",
         "user_name": null,
         "type": "momentary"
@@ -56,7 +56,7 @@
         "type": "momentary"
       },
       "kill_switch": {
-        "changes": ["byte2:0->8"],
+        "changes": ["byte3:0->8"],
         "default_name": "Kill Switch",
         "user_name": "Red Kill Switch",
         "type": "toggle"

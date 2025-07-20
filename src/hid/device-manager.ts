@@ -7,7 +7,7 @@ export class HIDDeviceManager {
   private device: HID.HID | null = null;
   private isConnected = false;
   private lastButtonStates: boolean[] = [];
-  private debounceTimer: NodeJS.Timeout | null = null;
+  private debounceTimer: ReturnType<typeof setTimeout> | null = null;
 
   constructor(
     private config: Config,
@@ -59,7 +59,7 @@ export class HIDDeviceManager {
       });
 
       // Find all matching devices
-      let targetDevices = devices.filter(
+      const targetDevices = devices.filter(
         device =>
           device.vendorId === this.config.device.vendorId &&
           device.productId === this.config.device.productId

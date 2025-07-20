@@ -131,7 +131,7 @@ export class ControlConfigParser {
   }
 
   // Helper method to get all available controls for debugging
-  getAllControls(): Record<string, any> {
+  getAllControls(): Record<string, unknown> {
     return this.config.controls;
   }
 
@@ -141,17 +141,15 @@ export class ControlConfigParser {
     if (!controls) return null;
 
     if (action) {
-      return (controls as any)[controlId]?.[action] || null;
+      return (controls as Record<string, Record<string, ControlChange>>)[controlId]?.[action] || null;
     }
 
-    return (controls as any)[controlId] || null;
+    return (controls as Record<string, ControlChange>)[controlId] || null;
   }
 
   // Debug method to get detected changes
   getDetectedChanges(data: Buffer): string[] {
     const currentState = Array.from(data);
-    console.log(`  🔍 Previous state: [${this.previousState.join(', ')}]`);
-    console.log(`  🔍 Current state: [${currentState.join(', ')}]`);
     return this.detectChanges(this.previousState, currentState);
   }
 
