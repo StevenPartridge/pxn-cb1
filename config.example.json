@@ -1,0 +1,57 @@
+{
+  "device": {
+    "vendorId": 14054,
+    "productId": 32769,
+    "name": "PXN CB1 Button Box"
+  },
+  "polling": {
+    "frequency": 10,
+    "debounce": 50
+  },
+  "actions": {
+    "0": {
+      "name": "Button 1",
+      "action": "log",
+      "description": "Log button press"
+    },
+    "1": {
+      "name": "Button 2",
+      "action": "open https://www.google.com",
+      "description": "Open Google"
+    },
+    "2": {
+      "name": "Button 3",
+      "action": "open https://www.github.com",
+      "description": "Open GitHub"
+    },
+    "3": {
+      "name": "Button 4",
+      "action": "macro:log|echo 'Button 4 pressed'",
+      "description": "Log and echo message"
+    },
+    "4": {
+      "name": "Button 5",
+      "action": "open -a 'System Preferences'",
+      "description": "Open System Preferences"
+    },
+    "5": {
+      "name": "Button 6",
+      "action": "open -a 'Calculator'",
+      "description": "Open Calculator"
+    },
+    "6": {
+      "name": "Button 7",
+      "action": "say 'Button seven pressed'",
+      "description": "Text to speech"
+    },
+    "7": {
+      "name": "Button 8",
+      "action": "macro:log|open https://www.youtube.com|echo 'Opening YouTube'",
+      "description": "Complex macro action"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "enableRawData": false
+  }
+} 
